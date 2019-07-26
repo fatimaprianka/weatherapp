@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/blockOne"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/forecasteDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Today"
+                android:textSize="25dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min" />
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/forecastTempMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    tools:text="19°C" />
+            </LinearLayout>
+        </LinearLayout>
+            <ImageView
+                android:src="@drawable/cloud"
+                android:id="@+id/forestImageIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/blockOne"
+                android:layout_alignParentLeft="true"
+                android:layout_alignEnd="@id/blockOne" />
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:id="@+id/forecastDate"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="January 11,2018" />
+
+    <LinearLayout
+        android:id="@+id/maxBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max" />
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:text=" : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:id="@+id/forecastTempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="32°C"/>
+         </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
